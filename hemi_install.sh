@@ -4,6 +4,7 @@ set -e
 
 # Обновляем пакеты
 sudo apt update && sudo apt upgrade -y
+sudo apt install -y jq
 
 # Создаем папку для бинарников
 mkdir -p ~/hemi
