@@ -16,7 +16,7 @@ cat ~/popm-address.json
 sudo apt install -y screen
 
 # Настройка переменных окружения
-echo "export POPM_BTC_PRIVKEY=$PRIVATE_KEY" >> ~/.bashrc
+echo "export POPM_BTC_PRIVKEY=$PRIVATE_KEY' >> ~/.bashrc
 echo "export POPM_STATIC_FEE=500" >> ~/.bashrc
 echo "export POPM_BFG_URL=wss://testnet.rpc.hemi.network/v1/ws/public" >> ~/.bashrc
 source ~/.bashrc
