@@ -1,3 +1,6 @@
+#!/bin/bash
+
+set -e
 
 PRIVATE_KEY=$(jq -r '.private_key' ~/popm-address.json)
 if [ -z "$PRIVATE_KEY" ]; then
