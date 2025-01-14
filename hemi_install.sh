@@ -17,7 +17,7 @@ cd hemi
 
 # Генерируем tBTC кошелек
 ./keygen -secp256k1 -json -net="testnet" > ~/popm-address.json
-
+sleep 3 
 # Извлекаем приватный ключ из popm-address.json
 PRIVATE_KEY=$(jq -r '.private_key' ~/popm-address.json)
 if [ -z "$PRIVATE_KEY" ]; then
